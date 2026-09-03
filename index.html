@@ -22,6 +22,10 @@
       content="Property management, construction, land sales, e-filings and professional property services."
     />
     <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="assets/images/kamuneko-ABOUT-US og.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,24 +33,30 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/images/FAVICON.png" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- ================= HEADER ================= -->
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="container nav-container">
-        <a
-          href="#home"
-          class="logo"
-          aria-label="Kamuneko Holdings Co. Ltd home"
-        >
-          <span class="logo-mark">KH</span>
-          <span class="logo-text">
-            <strong>Kamuneko Holdings Co. Ltd</strong>
-            <small>Property & Development</small>
-          </span>
+        <a href="#" class="logo">
+          <img
+            src="assets/logo/kamuneko logo.jpg"
+            alt="Kamuneko Holdings logo"
+            class="logo-image"
+          />
+
+          <div class="logo-text">
+            <strong>Kamuneko Holdings</strong>
+            <small>Property &amp; Development</small>
+          </div>
         </a>
 
         <button
@@ -158,12 +168,12 @@
       <section class="stats-section">
         <div class="container stats-grid">
           <div class="stat">
-            <strong>2</strong>
+            <strong>2+</strong>
             <span>Years of Experience</span>
           </div>
 
           <div class="stat">
-            <strong>20</strong>
+            <strong>20+</strong>
             <span>Clients Served</span>
           </div>
 
@@ -180,14 +190,13 @@
       </section>
 
       <!-- ================= SERVICES ================= -->
-      <section class="section services-section" id="services">
+      <section id="services" class="services-section section">
         <div class="container">
           <div class="section-heading">
             <div>
               <span class="eyebrow">What We Do</span>
               <h2>Complete property solutions.</h2>
             </div>
-
             <p>
               We bring together property, construction, documentation and
               professional support services under one roof.
@@ -195,9 +204,16 @@
           </div>
 
           <div class="services-grid">
-            <article class="service-card reveal">
-              <div class="service-number">01</div>
-              <div class="service-icon"></div>
+            <!-- Service 01: Property Management -->
+            <div class="service-card reveal">
+              <span class="service-number">01</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/property.png"
+                  alt="Property Management Asset Overview"
+                  class="service-img"
+                />
+              </div>
               <h3>Property Management</h3>
               <p>
                 Professional management of residential and commercial properties
@@ -209,11 +225,18 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
 
-            <article class="service-card reveal">
-              <div class="service-number">02</div>
-              <div class="service-icon"></div>
+            <!-- Service 02: Building & Construction -->
+            <div class="service-card reveal">
+              <span class="service-number">02</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/building.png"
+                  alt="Building and Structural Construction Site"
+                  class="service-img"
+                />
+              </div>
               <h3>Building & Construction</h3>
               <p>
                 Support for building projects from planning and coordination
@@ -225,11 +248,18 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
 
-            <article class="service-card reveal">
-              <div class="service-number">03</div>
-              <div class="service-icon"></div>
+            <!-- Service 03: E-Filings -->
+            <div class="service-card reveal">
+              <span class="service-number">03</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/filings.png"
+                  alt="Property Documentation and E-Filing Process"
+                  class="service-img"
+                />
+              </div>
               <h3>E-Filings</h3>
               <p>
                 Assistance with property-related electronic filings,
@@ -241,11 +271,18 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
 
-            <article class="service-card reveal">
-              <div class="service-number">04</div>
-              <div class="service-icon"></div>
+            <!-- Service 04: Land & Property Sales -->
+            <div class="service-card reveal">
+              <span class="service-number">04</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/land.png"
+                  alt="Open land and residential plots for sale in Kenya"
+                  class="service-img"
+                />
+              </div>
               <h3>Land & Property Sales</h3>
               <p>
                 Find suitable land and properties while receiving support
@@ -257,11 +294,18 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
 
-            <article class="service-card reveal">
-              <div class="service-number">05</div>
-              <div class="service-icon"></div>
+            <!-- Service 05: Borehole Drilling (Requested Highlight Focus) -->
+            <div class="service-card reveal highlighted-service">
+              <span class="service-number">05</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/borehole.png"
+                  alt="Industrial borehole water drilling equipment installation machinery"
+                  class="service-img"
+                />
+              </div>
               <h3>Borehole Drilling</h3>
               <p>
                 Borehole drilling coordination and water access solutions for
@@ -273,11 +317,18 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
 
-            <article class="service-card reveal">
-              <div class="service-number">06</div>
-              <div class="service-icon"></div>
+            <!-- Service 06: Process Serving -->
+            <div class="service-card reveal">
+              <span class="service-number">06</span>
+              <div class="service-image-wrapper">
+                <img
+                  src="assets/images/serving.png"
+                  alt="Professional Legal process serving and court documentation tracking"
+                  class="service-img"
+                />
+              </div>
               <h3>Process Serving</h3>
               <p>
                 Professional support for licence-related processes and court
@@ -289,7 +340,90 @@
               >
                 Learn more &#8594;
               </button>
-            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW COMPONENT: FEATURED PROJECTS GALLERY & INDUSTRIAL VIDEO -->
+      <section id="projects" class="projects-gallery-section section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Our Portfolio</span>
+              <h2>Proven Track Records.</h2>
+            </div>
+            <p>
+              Explore high-performing structural completions, land delivery, and
+              successful water provision projects across Kenya.
+            </p>
+          </div>
+
+          <!-- Interactive Projects Grid -->
+          <div class="gallery-grid">
+            <div class="gallery-item reveal" data-category="drilling">
+              <div class="gallery-img-box">
+                <img
+                  src="assets/images/drilling3.png"
+                  alt="Active borehole exploration site setup"
+                />
+                <div class="gallery-overlay-meta">
+                  <h4>Borehole Infrastructure Implementation</h4>
+                  <small>Kakamega Project Site</small>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item reveal" data-category="construction">
+              <div class="gallery-img-box">
+                <img
+                  src="assets/images/commercial.png"
+                  alt="Commercial structural development framework phase"
+                />
+                <div class="gallery-overlay-meta">
+                  <h4>Commercial Structural Construction</h4>
+                  <small>Western Kenya</small>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item reveal" data-category="land">
+              <div class="gallery-img-box">
+                <img
+                  src="assets/images/plot.png"
+                  alt="Completed agricultural and property plot allocations"
+                />
+                <div class="gallery-overlay-meta">
+                  <h4>Residential Subdivisions and Surveying</h4>
+                  <small>Kakamega County</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dedicated Video Integration Block -->
+          <div class="video-showcase-wrapper reveal">
+            <h3>Watch Our Team In Action</h3>
+            <p>
+              See a real-time operational overview of our specialized borehole
+              machinery performing drilling operations on-site.
+            </p>
+            <div class="video-container-box">
+              <!-- Self-hosted HTML5 video structure with fallback layout styling -->
+              <video
+                controls
+                poster="assets/images/waterdrilling.png"
+                preload="none"
+                aria-label="Borehole drilling project implementation video"
+              >
+                <source
+                  src="assets/videos/borehole-project.mp4"
+                  type="video/mp4"
+                />
+                <!-- YouTube/Vimeo Iframe Alternative Option: Uncomment if streaming from cloud -->
+                <!-- <iframe src="https://youtube.com" frameborder="0" allowfullscreen title="Borehole Operation Stream"></iframe> -->
+                Your browser does not support the structural video playback
+                feature.
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -548,7 +682,7 @@
         <div class="container about-grid">
           <div class="about-image reveal">
             <img
-              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
+              src="assets/images/kamuneko-ABOUT-US.png"
               alt="Modern property interior"
               loading="lazy"
             />
@@ -578,17 +712,17 @@
 
             <div class="about-points">
               <div>
-                <span>✓</span>
+                <span>&checkmark;</span>
                 <p>Professional & transparent service</p>
               </div>
 
               <div>
-                <span>✓</span>
+                <span>&checkmark;</span>
                 <p>Practical local market knowledge</p>
               </div>
 
               <div>
-                <span>✓</span>
+                <span>&checkmark;</span>
                 <p>End-to-end property support</p>
               </div>
             </div>
@@ -757,7 +891,12 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a href="#home" class="logo footer-logo">
-            <span class="logo-mark">KH</span>
+            <span class="logo-mark"
+              ><img
+                src="assets/logo/kamuneko logo.jpg"
+                alt="Kamuneko Holdings logo"
+                class="logo-image"
+            /></span>
             <span class="logo-text">
               <strong>Kamuneko Holdings Co. Ltd</strong>
               <small>Property & Development</small>
@@ -770,10 +909,52 @@
           </p>
 
           <div class="social-links">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="social-icon facebook"
+              title="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="social-icon instagram"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="social-icon linkedin"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="X" class="social-icon x-twitter" title="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              href="https://wa.me/254100314939"
+              aria-label="WhatsApp"
+              class="social-icon whatsapp"
+              title="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <!--<div class="social-links">
             <a href="#" aria-label="Facebook"></a>
             <a href="#" aria-label="Instagram"></a>
             <a href="#" aria-label="LinkedIn"></a>
-          </div>
+            
+          </div>-->
         </div>
 
         <div class="footer-column">
@@ -811,8 +992,8 @@
 
       <div class="container footer-bottom">
         <p>
-          © <span id="currentYear"></span> Kamuneko Holdings Co. Ltd. All rights
-          reserved.
+          &copy; <span id="currentYear"></span> Kamuneko Holdings Co. Ltd. All
+          rights reserved.
         </p>
 
         <div>
@@ -839,7 +1020,7 @@
           data-close-modal
           aria-label="Close property details"
         >
-          × x
+          x
         </button>
 
         <div class="modal-image">
@@ -885,7 +1066,7 @@
           data-close-service
           aria-label="Close service details"
         >
-          ×
+          x
         </button>
 
         <div class="service-modal-icon">✓</div>

@@ -446,8 +446,7 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
 
-  formMessage.textContent =
-    "Thank you. Your enquiry has been captured in this demo. Connect the form to your backend or email service before going live.";
+  formMessage.textContent = "Thank you. Your enquiry has been captured.";
 
   formMessage.classList.add("visible");
 
